@@ -14,7 +14,6 @@ public class Ticket {
     private String usuario;
 
     public Ticket() {
-
     }
 
     public Ticket(String folio, String titulo, String descripcion, String categoria, String prioridad, String estado, String usuario) {
@@ -82,7 +81,6 @@ public class Ticket {
     public void setUsuario(String usuario) {
         this.usuario = usuario;
     }
-
     @Override
     public String toString() {
         return folio + " | " + titulo + " | " + prioridad + " | " + estado + " | ";

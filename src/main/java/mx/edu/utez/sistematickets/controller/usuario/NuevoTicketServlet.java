@@ -65,9 +65,9 @@ public class NuevoTicketServlet extends HttpServlet {
             AppData.getListaGeneral().add(ticket);
             AppData.getColaPendientes().encolar(ticket);
         }
-        //Post/Redirect/Get: redirigir evita que al recargar
-        //se registre el mismo ticket dos veces.
-        response.sendRedirect(request.getContextPath() + "/usuario/nuevo-ticket?registrado=" + folio);
+        //redirigir evita que al recargar
+        //se registre el mismo ticket dos veces
+        response.sendRedirect(request.getContextPath() + "/usuario/mis-tickets");
     }
 
     //Evitamos NullPointerExxception si un parametro no llega y quita espacios sobrantes

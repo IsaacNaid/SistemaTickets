@@ -50,7 +50,7 @@
             </a>
 
             <!-- Nuevo ticket -->
-            <a href="#"
+            <a href="${pageContext.request.contextPath}/usuario/nuevo-ticket"
                class="sidebar-link">
 
                 <span class="sidebar-icon">+</span>
@@ -59,7 +59,7 @@
             </a>
 
             <!-- Mis tickets -->
-            <a href="#"
+            <a href="${pageContext.request.contextPath}/usuario/mis-tickets"
                class="sidebar-link">
 
                 <span class="sidebar-icon">≡</span>
@@ -200,14 +200,14 @@
                 <div class="form-actions"
                      style="justify-content: flex-start; margin-top: 0;">
 
-                    <a href="#"
+                    <a href="${pageContext.request.contextPath}/usuario/nuevo-ticket"
                        class="btn btn-primary">
 
                         + Nuevo ticket
 
                     </a>
 
-                    <a href="#"
+                    <a href="${pageContext.request.contextPath}/usuario/mis-tickets"
                        class="btn btn-secondary">
 
                         Ver mis tickets

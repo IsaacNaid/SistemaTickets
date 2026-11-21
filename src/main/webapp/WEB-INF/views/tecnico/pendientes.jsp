@@ -69,7 +69,7 @@
         </nav>
 
         <div class="sidebar-footer">
-            <a href="<%= ctx %>/login" class="sidebar-link">
+            <a href="<%= ctx %>/" class="sidebar-link">
                 <span class="sidebar-icon">↪</span> Cerrar sesión
             </a>
         </div>
@@ -97,7 +97,7 @@
             <div class="page-header-row">
                 <div class="page-header">
                     <h2>Tickets pendientes</h2>
-                    <p>Bandeja de atención en orden de llegada (FIFO): el primero en entrar es el primero en ser atendido.</p>
+
                 </div>
 
                 <form action="<%= ctx %>/tecnico/atender" method="post">
@@ -147,7 +147,6 @@
                 <div class="card-header">
                     <div>
                         <h3>Ticket atendido: <%= h(atendido.getFolio()) %></h3>
-                        <p>Salió del frente de la cola y cambió su estado.</p>
                     </div>
                     <span class="badge badge-progress"><%= h(atendido.getEstado()) %></span>
                 </div>

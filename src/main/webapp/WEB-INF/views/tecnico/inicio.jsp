@@ -49,7 +49,7 @@
             </a>
 
             <!-- Tickets pendientes -->
-            <a href="#"
+            <a href="${pageContext.request.contextPath}/tecnico/pendientes"
                class="sidebar-link">
 
                 <span class="sidebar-icon">≡</span>
@@ -187,7 +187,7 @@
                         aparecerá aquí para ser atendido.
                     </p>
 
-                    <a href="#"
+                    <a href="${pageContext.request.contextPath}/tecnico/pendientes"
                        class="btn btn-primary">
 
                         Ver tickets pendientes

@@ -39,14 +39,14 @@
             </a>
 
             <a href="${pageContext.request.contextPath}/usuario/mis-tickets" class="sidebar-link">
-                <span class="sidebar-icon">☰</span>
+                <span class="sidebar-icon">≡</span>
                 Mis tickets
             </a>
         </nav>
 
         <div class="sidebar-footer">
             <!-- Ruta del login-->
-            <a href="${pageContext.request.contextPath}/login" class="sidebar-link">
+            <a href="${pageContext.request.contextPath}/" class="sidebar-link">
                 <span class="sidebar-icon">↪</span>
                 Cerrar sesión
             </a>
@@ -104,7 +104,7 @@
                         <span>Tickets en la lista general</span>
                         <strong>${totalLista}</strong>
                     </div>
-                    <div class="stat-icon">☰</div>
+                    <div class="stat-icon">≡</div>
                 </div>
 
                 <div class="stat-card">
@@ -112,7 +112,7 @@
                         <span>Tickets en la cola de pendientes</span>
                         <strong>${totalCola}</strong>
                     </div>
-                    <div class="stat-icon">⏳</div>
+                    <div class="stat-icon">◷</div>
                 </div>
             </div>
 

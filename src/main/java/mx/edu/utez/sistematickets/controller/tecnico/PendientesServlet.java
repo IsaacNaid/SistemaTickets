@@ -23,14 +23,12 @@ public class PendientesServlet extends HttpServlet {
 
         ColaTickets cola = AppData.getColaPendientes();
 
-        // Recorre la cola de frente a final sin modificarla
         List<Ticket> pendientes = cola.recorrer();
 
         request.setAttribute("pendientes", pendientes);
         request.setAttribute("totalPendientes", cola.tamanio());
         request.setAttribute("siguiente", cola.consultarPrimero());
 
-        // Mensaje / ticket atendido que dejo AtenderTicketServlet (se muestra una sola vez)
         HttpSession session = request.getSession(false);
         if (session != null) {
             moverASolicitud(session, request, "mensajeExito");
